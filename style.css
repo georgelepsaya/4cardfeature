@@ -1,0 +1,223 @@
+.attribution {
+      font-size: 11px;
+      text-align: center;
+      color: hsl(229, 6%, 66%);
+}
+
+.attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+      color: hsl(229, 6%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: hsl(234, 12%, 34%);
+}
+
+.top1 {
+    font-weight: 200;
+    font-size: 24px;
+    margin-top: 90px;
+}
+
+.top2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.top3 {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    line-height: 1.8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -6px hsla(226, 38%, 75%, 0.735);
+    padding: 20px 25px;
+    width: 80%;
+    margin-top: 30px;
+    min-height: 200px;
+}
+
+.card:first-child {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card:nth-child(2) {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card:nth-child(3) {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card:last-child {
+    border-top: 4px solid hsl(212, 86%, 64%);
+    margin-bottom: 75px;
+}
+
+.card p {
+    font-size: 12px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.card img {
+    width: 57px;
+    float: right;
+    margin: 35px 0 0 0;
+}
+
+.middle {
+    display: none;
+}
+
+@media (min-width: 992px) {
+   .container {
+       justify-content: space-around;
+       display: flex;
+       flex-direction: row;
+       align-items: flex-end;
+       height: 510px;
+       width: 1110px;
+   }
+   .card:last-child, .card:first-child {
+       margin-bottom: 0;
+       align-self: center;
+   }
+   .card {
+       margin-top: 0;
+       width: 350px;
+       height: 240px;
+       padding: 25px 30px;
+   }
+
+    .card:first-child img {
+        margin: 70px 0 0 0;
+    }
+
+    .card:last-child img {
+        margin: 50px 0 0 0;
+    }
+
+   .middle {
+       justify-content: space-between;
+       display: flex;
+       max-width: 350px;
+       flex-direction: column;
+       height: 510px;
+       margin: 0 30px;
+   }
+   .middle .card1:last-child {
+        border-top: 4px solid hsl(34, 97%, 64%);
+        align-self: flex-end;
+        width: 350px;
+   }
+   .middle .card1:first-child {
+       border-top: 4px solid hsl(0, 78%, 62%);
+       align-self: flex-start;
+       width: 350px;
+   }
+   .card:nth-child(2), .card:nth-child(3) {
+       display: none;
+   }
+   .card1 {
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px -6px hsla(226, 38%, 75%, 0.735);
+        padding: 20px 25px;
+        width: 80%;
+        height: 240px;
+        padding: 25px 30px;
+    }
+
+    .card1 p {
+        font-size: 12px;
+    }
+
+    .card1 h2 {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+
+    .card1 img {
+        width: 57px;
+        float: right;
+        margin: 50px 0 0 0;
+    }
+
+    .card1:first-child img {
+        margin: 50px 0 0 0;
+    }
+
+    .card1:last-child img {
+        margin: 75px 0 0 0;
+    }
+
+    .top1 {
+        font-weight: 200;
+        font-size: 32px;
+        margin-top: 80px;
+    }
+
+    .top2 {
+        font-weight: 600;
+        font-size: 32px;
+    }
+
+    .top3 {
+        text-align: center;
+        width: 35%;
+        margin-bottom: 70px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: hsl(229, 6%, 66%);
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+      right: 20%;
+}
+
+.attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+      color: hsl(229, 6%, 66%);
+}
+}
